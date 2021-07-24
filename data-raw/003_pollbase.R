@@ -180,21 +180,6 @@ pollbase <-
   )
 
 
-# We'll also remove all hyphens from the pollster variable so that, for
-# example, "TNS BMRB" and "TNS-BMRB" aren't treated separately. We'll
-# also convert all the names to lower case so that there is no longer a
-# difference between "Onepoll" and "OnePoll".
-
-pollbase <-
-  pollbase %>%
-  mutate(
-    pollster =
-      pollster %>%
-      str_remove_all("-") %>%
-      tolower()
-  )
-
-
 # Next, we'll recode some inconsistencies in the month column with the
 # name of September (some are Sep, some are Sept). We'll also fix a
 # case which includes the month in the days column.
@@ -420,6 +405,42 @@ pollbase <-
 pollbase <-
   pollbase %>%
   mutate(id = paste0("poll-", row_number()))
+
+
+# We'll also remove all hyphens from the pollster variable so that, for
+# example, "TNS BMRB" and "TNS-BMRB" aren't treated separately. We'll
+# also convert all the names to lower case so that there is no longer a
+# difference between "Onepoll" and "OnePoll". Finally, we'll provide some
+# manual last touches to make sure that company names are consistent.
+
+pollbase <-
+  pollbase %>%
+  mutate(
+    pollster =
+      pollster %>%
+      tolower() %>%
+      str_remove_all("-") %>%
+      str_remove_all(" \\(mrp\\)") %>%
+      str_remove_all("\\(unpublished\\)") %>%
+      str_replace("angus rs", "angus reid public opinion") %>%
+      str_replace("bmg research", "bmg") %>%
+      str_replace("lord ashcroft polls", "lord ashcroft") %>%
+      str_replace("harris interactive", "harris") %>%
+      str_replace("icm research", "icm") %>%
+      str_replace("kantar public", "kantar") %>%
+      str_replace("kantar public", "kantar") %>%
+      str_replace("mkting sciences", "marketing sciences") %>%
+      str_replace("research srv|research serv ltd", "research service ltd") %>%
+      str_replace("tns bmrb|tnsbmrb", "tns") %>%
+      str_replace("&", "and") %>%
+      str_replace("savantacomres", "savanta comres"),
+    pollster =
+      ifelse(
+        nchar(pollster) <= 3,
+        toupper(pollster),
+        tools::toTitleCase(pollster)
+      )
+  )
 
 
 # Then, we'll select only those variables that we want to carry over to
