@@ -172,7 +172,8 @@ ggsave(
   width = 3.5,
   height = 2.3,
   units = "in",
-  dpi = 320
+  dpi = 320,
+  bg = "white"
 )
 
 ```
