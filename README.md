@@ -10,8 +10,8 @@ simple. It contains two pre-formatted datasets, plus a host of useful
 functions. The first dataset, `pollbase`, is a long-format version of
 Mark Pack’s dataset of historic British public opinion polls combined
 with more recent data from Wikipedia. The second, `pollbasepro`,
-provides 24,167 daily estimates of voting intention figures for each of
-Britain’s three largest parties from 26 May 1955 to 24 July 2021.
+provides 24,200 daily estimates of voting intention figures for each of
+Britain’s three largest parties from 26 May 1955 to 26 August 2021.
 
 To install the latest version of `{britpol}`, run the following code in
 `R`:
@@ -24,15 +24,15 @@ devtools::install_github("jackobailey/britpol")
 
 <img src="https://raw.githubusercontent.com/jackobailey/britpol/master/documentation/_assets/timeplot_gh.png" alt="Recent polling figures" align="right" width="400" style="padding: 0 15px; float: right;"/>
 
-**British Poll of Polls, 24 July 2021:**
+**British Poll of Polls, 26 August 2021:**
 
 -   **Conservative Party:** 39% (37% to 42%)
 -   **Labour Party:** 35% (33% to 38%)
--   **Liberal Democrats:** 11% (9% to 12%)
+-   **Liberal Democrats:** 11% (9% to 13%)
 
 `pollbasepro` suggests that the Conservative Party is the largest party
-in Britain. They hold a lead over the Labour Party of around 4% (1% to
-8%). This puts the Labour Party in second and the Liberal Democrats in
+in Britain. They hold a lead over the Labour Party of around 4% (0% to
+7%). This puts the Labour Party in second and the Liberal Democrats in
 third.
 
 ## Notes, Usage, and Attribution
@@ -63,8 +63,8 @@ are as follows:
 
 -   **Data:** Bailey, J., M. Pack, and L. Mansillo (2021) PollBasePro:
     Daily Estimates of Aggregate Voting Intention in Great Britain from
-    1955 to 2021 v.0.1.0 \[computer file\], August 2021. Retrieved from
-    <https://doi.org/10.7910/DVN/3POIQW>.
+    1955 to 2021 v.0.1.0 \[computer file\], September 2021. Retrieved
+    from <https://doi.org/10.7910/DVN/3POIQW>.
 
 -   **Paper:** Bailey, J., M. Pack, and L. Mansillo (2021) PollBasePro:
     Daily Estimates of Aggregate Voting Intention in Great Britain from
