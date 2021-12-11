@@ -1,0 +1,45 @@
+Package: britpol
+Title: Data and Functions for Studying British Politics
+Version: 0.1.0
+Date: 2021-03-12
+Authors@R: c(person(given = "Jack",
+           family = "Bailey",
+           role = c("aut", "cre"),
+           email = "jack.bailey@manchester.ac.uk"),
+           person(given = "Mark",
+           family = "Pack",
+           role = "ctb"),
+           person(given = "Luke",
+           family = "Mansillo",
+           role = "ctb"))
+Description: Data and convenience functions to help analyse british politics data.
+BugReports: https://github.com/jackobailey/britpol/issues
+License: GPL (>= 3)
+Encoding: UTF-8
+LazyData: true
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.1.2
+Depends: 
+    R (>= 3.5.0)
+Suggests: 
+    ggplot2,
+    cmdstanr,
+    testthat,
+    here,
+    htmltab,
+    kableExtra,
+    labelled,
+    purrr,
+    scales,
+    stringr,
+    tibble,
+    tidyr,
+    usethis
+Imports: 
+    haven,
+    dplyr,
+    lubridate,
+    data.table,
+    magrittr,
+    comparator
+URL: https://github.com/jackobailey/britpol
