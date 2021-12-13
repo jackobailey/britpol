@@ -1,3 +1,7 @@
 ^britpol\.Rproj$
 ^\.Rproj\.user$
 ^data-raw$
+^documentation$
+^models
+^sessions$
+^LICENSE\.md$
