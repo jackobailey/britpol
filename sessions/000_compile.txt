@@ -1,4 +1,4 @@
-Analysis completed: 2021-12-13 10:35:14
+Analysis completed: 2021-12-19 08:53:52
 
 R version 4.1.2 (2021-11-01)
 Platform: x86_64-pc-linux-gnu (64-bit)
@@ -18,8 +18,8 @@ attached base packages:
 
 other attached packages:
  [1] lubridate_1.8.0 forcats_0.5.1   stringr_1.4.0   dplyr_1.0.7     purrr_0.3.4     readr_2.1.1    
- [7] tidyr_1.1.4     tibble_3.1.6    ggplot2_3.3.5   tidyverse_1.3.1 britpol_0.1.0   here_1.0.1     
-[13] rmarkdown_2.11 
+ [7] tidyr_1.1.4     tibble_3.1.6    ggplot2_3.3.5   tidyverse_1.3.1 here_1.0.1      rmarkdown_2.11 
+[13] britpol_0.1.0  
 
 loaded via a namespace (and not attached):
  [1] Rcpp_1.0.7        prettyunits_1.1.1 ps_1.6.0          assertthat_0.2.1  rprojroot_2.0.2  
