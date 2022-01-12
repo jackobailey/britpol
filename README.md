@@ -10,8 +10,8 @@ simple. It contains two pre-formatted datasets, plus a host of useful
 functions. The first dataset, `pollbase`, is a long-format version of
 Mark Pack’s dataset of historic British public opinion polls combined
 with more recent data from Wikipedia. The second, `pollbasepro`,
-provides 24,325 daily estimates of voting intention figures for each of
-Britain’s three largest parties from 26 May 1955 to 29 December 2021.
+provides 24,338 daily estimates of voting intention figures for each of
+Britain’s three largest parties from 26 May 1955 to 11 January 2022.
 
 To install the latest version of `{britpol}`, run the following code in
 `R`:
@@ -24,15 +24,15 @@ devtools::install_github("jackobailey/britpol")
 
 <img src="https://raw.githubusercontent.com/jackobailey/britpol/master/documentation/_assets/timeplot_gh.png" alt="Recent polling figures" align="right" width="400" style="padding: 0 15px; float: right;"/>
 
-**British Poll of Polls, 29 December 2021:**
+**British Poll of Polls, 11 January 2022:**
 
--   **Labour Party:** 41% (38% to 43%)
--   **Conservative Party:** 33% (30% to 35%)
--   **Liberal Democrats:** 11% (10% to 13%)
+-   **Labour Party:** 39% (37% to 41%)
+-   **Conservative Party:** 32% (30% to 35%)
+-   **Liberal Democrats:** 13% (11% to 14%)
 
 `pollbasepro` suggests that the Labour Party is the largest party in
-Britain. They hold a lead over the Conservative Party of around 8pp (4pp
-to 12pp). This puts the Conservative Party in second and the Liberal
+Britain. They hold a lead over the Conservative Party of around 7pp (3pp
+to 10pp). This puts the Conservative Party in second and the Liberal
 Democrats in third.
 
 ## Notes, Usage, and Attribution
@@ -63,9 +63,9 @@ are as follows:
 
 -   **Data:** Bailey, J., M. Pack, and L. Mansillo (2022) PollBasePro:
     Daily Estimates of Aggregate Voting Intention in Great Britain from
-    1955 to 2021 v.0.1.0 \[computer file\], January 2022. Retrieved from
+    1955 to 2022 v.0.1.0 \[computer file\], January 2022. Retrieved from
     <https://doi.org/10.7910/DVN/3POIQW>.
 
 -   **Paper:** Bailey, J., M. Pack, and L. Mansillo (2022) PollBasePro:
     Daily Estimates of Aggregate Voting Intention in Great Britain from
-    1955 to 2021. Retrieved from doi.
+    1955 to 2022. Retrieved from doi.

@@ -860,7 +860,7 @@ get_new_polls <- function(){
   # on the page.
 
   dta_20 <-
-    htmltab::htmltab(url, 3) %>%
+    htmltab::htmltab(url, 4) %>%
     dplyr::select(
       date = Datesconducted,
       pollster = Pollster,
@@ -872,7 +872,7 @@ get_new_polls <- function(){
     dplyr::mutate(date = paste(date, "2020"))
 
   dta_21 <-
-    htmltab::htmltab(url, 2) %>%
+    htmltab::htmltab(url, 3) %>%
     dplyr::select(
       date = Datesconducted,
       pollster = Pollster,
@@ -883,10 +883,22 @@ get_new_polls <- function(){
     ) %>%
     dplyr::mutate(date = paste(date, "2021"))
 
+  dta_22 <-
+    htmltab::htmltab(url, 2) %>%
+    dplyr::select(
+      date = Datesconducted,
+      pollster = Pollster,
+      n = Samplesize,
+      con = Con,
+      lab = Lab,
+      lib = `Lib Dem`
+    ) %>%
+    dplyr::mutate(date = paste(date, "2022"))
+
 
   # Now we'll merge the data together
 
-  dta <- rbind(dta_20, dta_21)
+  dta <- rbind(dta_20, dta_21, dta_22)
 
 
   # At the moment, the data contain rows that include only information on the
