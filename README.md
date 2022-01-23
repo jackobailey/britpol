@@ -10,8 +10,8 @@ simple. It contains two pre-formatted datasets, plus a host of useful
 functions. The first dataset, `pollbase`, is a long-format version of
 Mark Pack’s dataset of historic British public opinion polls combined
 with more recent data from Wikipedia. The second, `pollbasepro`,
-provides 24,342 daily estimates of voting intention figures for each of
-Britain’s three largest parties from 26 May 1955 to 15 January 2022.
+provides 24,349 daily estimates of voting intention figures for each of
+Britain’s three largest parties from 26 May 1955 to 22 January 2022.
 
 To install the latest version of `{britpol}`, run the following code in
 `R`:
@@ -24,15 +24,15 @@ devtools::install_github("jackobailey/britpol")
 
 <img src="https://raw.githubusercontent.com/jackobailey/britpol/master/documentation/_assets/timeplot_gh.png" alt="Recent polling figures" align="right" width="400" style="padding: 0 15px; float: right;"/>
 
-**British Poll of Polls, 15 January 2022:**
+**British Poll of Polls, 22 January 2022:**
 
--   **Labour Party:** 41% (39% to 43%)
--   **Conservative Party:** 30% (28% to 32%)
--   **Liberal Democrats:** 13% (11% to 15%)
+-   **Labour Party:** 42% (40% to 45%)
+-   **Conservative Party:** 30% (27% to 33%)
+-   **Liberal Democrats:** 12% (10% to 14%)
 
 `pollbasepro` suggests that the Labour Party is the largest party in
-Britain. They hold a lead over the Conservative Party of around 11pp
-(8pp to 14pp). This puts the Conservative Party in second and the
+Britain. They hold a lead over the Conservative Party of around 12pp
+(9pp to 16pp). This puts the Conservative Party in second and the
 Liberal Democrats in third.
 
 ## Notes, Usage, and Attribution
