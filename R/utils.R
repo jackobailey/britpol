@@ -318,7 +318,7 @@ get_2015_polls <- function(){
   # on the page.
 
   dta_10 <-
-    htmltab::htmltab(url1, 3) %>%
+    htmltab::htmltab(url1, 8) %>%
     dplyr::select(
       date = `Date(s)conducted`,
       pollster = `Polling organisation/client`,
@@ -330,7 +330,7 @@ get_2015_polls <- function(){
     dplyr::mutate(date = paste(date, "2010"))
 
   dta_11 <-
-    htmltab::htmltab(url1, 2) %>%
+    htmltab::htmltab(url1, 7) %>%
     dplyr::select(
       date = `Date(s)conducted`,
       pollster = `Polling organisation/client`,
@@ -342,7 +342,7 @@ get_2015_polls <- function(){
     dplyr::mutate(date = paste(date, "2011"))
 
   dta_12 <-
-    htmltab::htmltab(url1, 1) %>%
+    htmltab::htmltab(url1, 6) %>%
     dplyr::select(
       date = `Date(s)conducted`,
       pollster = `Polling organisation/client`,
